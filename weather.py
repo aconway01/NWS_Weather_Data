@@ -14,7 +14,8 @@ def main():
 
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
-    options.add_argument("user-agent=aconway")
+    userAgent = ''
+    options.add_argument(userAgent)
     driverPath = ''
     driver = webdriver.Chrome(driverPath, options=options)
 
