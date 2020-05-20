@@ -46,7 +46,7 @@ def main():
                 close.click()
                 sleep(0.5)
             except:
-                a = 1
+                pass
 
             city = driver.find_element_by_xpath(
                 '//*[@id="inputstring"]')
@@ -66,7 +66,7 @@ def main():
                     sleep(0.5)
                     search.click()
                 except:
-                    a = 1
+                    pass
 
             try:
                 wait = WebDriverWait(driver, 5).until(EC.visibility_of_element_located(
